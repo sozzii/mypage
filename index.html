@@ -27,12 +27,12 @@
     <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
     
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 
 
       * {
-        font-family: "Hahmlet", serif;
+        font-family: 'Noto Sans KR', sans-serif;
       }
 
 
@@ -40,7 +40,8 @@
       .mytitle {
         background-color: darkcyan;
         color: aliceblue;
-
+        font-weight: 900;
+        
 
 
         height: 250px;
@@ -64,6 +65,10 @@
         background-size: cover;
       }
 
+      .mytitle > h1{
+        font-size: 50px;
+      }
+
 
       .mytitle > P{
         margin: 0;
@@ -76,6 +81,7 @@
         border: 1px solid aliceblue;
         border-radius: 50px;
         color: aliceblue;
+        font-weight: 500;
         margin-top: 20px;
         transition: background-color 2s ease-out 100ms
       }
@@ -120,15 +126,26 @@
         align-items: center;
         justify-content: center;
 
-
-
         margin-top: 20px;
       }
 
 
 
       .mybtn > button{
+        font-weight: 300;
         margin-right: 10px;
+      }
+
+      .card-title{
+        font-weight: 600;
+      }
+
+      .card-text{
+        font-weight: 400;
+      }
+
+      .mycomment{
+        font-weight: 300;
       }
     </style>
   </head>
@@ -153,7 +170,15 @@
         <label for="floatingInput">영화 url</label>
       </div>
 
-
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">별점</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>추가하기</option>
+          <option value="1">⭐</option>
+          <option value="2">⭐⭐</option>
+          <option value="3">⭐⭐⭐</option>
+        </select>
+      </div>
 
 
       <div class="form-floating">
