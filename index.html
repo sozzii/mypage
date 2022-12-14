@@ -7,6 +7,8 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,25 +22,37 @@
       crossorigin="anonymous"
     ></script>
 
+
+
     <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
     
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap");
 
+
+
       * {
         font-family: "Hahmlet", serif;
       }
+
+
 
       .mytitle {
         background-color: darkcyan;
         color: aliceblue;
 
+
+
         height: 250px;
+
+
 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+
 
         background-image: linear-gradient(
             0deg,
@@ -50,40 +64,55 @@
         background-size: cover;
       }
 
-      .mytitle > button {
+
+      .mytitle > P{
+        margin: 0;
+      }
+
+      .customButton {
         width: 250px;
         height: 50px;
-
         background-color: transparent;
         border: 1px solid aliceblue;
         border-radius: 50px;
         color: aliceblue;
-
         margin-top: 20px;
-
-        transition: border-width 2s ease-out 100ms
+        transition: background-color 2s ease-out 100ms
       }
 
-      .mytitle > button:hover {
-        border-width: 2px;
+
+
+      .mytitle > p:hover .customButton {
+        background-color:aliceblue;
+        color: #222;
       }
+
+
 
       .mycomment {
         color: darkgray;
       }
+
+
 
       .mycards {
         width: 1200px;
         margin: 20px auto;
       }
 
+
+
       .mypost{
         width: 500px;
         margin: 20px auto;
         padding: 20px;
 
+
+
         box-shadow: 0px 0px 3px 0px gray;
       }
+
+
 
       .mybtn{
         display: flex;
@@ -91,8 +120,12 @@
         align-items: center;
         justify-content: center;
 
+
+
         margin-top: 20px;
       }
+
+
 
       .mybtn > button{
         margin-right: 10px;
@@ -102,8 +135,12 @@
   <body>
     <div class="mytitle">
       <h1>내 생의 최고의 영화들</h1>
-      <button>영화 기록하기</button>
+      <P>
+        <button class="customButton">영화 기록하기</button>
+      </P>
     </div>
+
+
 
     <div class="mypost">
       <div class="form-floating mb-3">
@@ -117,6 +154,8 @@
       </div>
 
 
+
+
       <div class="form-floating">
         <textarea
           class="form-control"
@@ -126,11 +165,15 @@
         <label for="floatingTextarea">Comments</label>
       </div>
 
+
+
       <div class="mybtn">
         <button type="button" class="btn btn-dark">기록하기</button>
         <button type="button" class="btn btn-light">닫기</button>
       </div>
     </div>
+
+
 
     <div class="mycards">
       <div class="row row-cols-1 row-cols-md-4 g-4">
@@ -150,21 +193,7 @@
           </div>
         </div>
 
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">영화제목</h5>
-              <p class="card-text">코멘트</p>
-              <p>⭐⭐⭐</p>
-              <p class="mycomment">의견</p>
-            </div>
-          </div>
-        </div>
+
 
         <div class="col">
           <div class="card h-100">
@@ -181,6 +210,26 @@
             </div>
           </div>
         </div>
+
+
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">영화제목</h5>
+              <p class="card-text">코멘트</p>
+              <p>⭐⭐⭐</p>
+              <p class="mycomment">의견</p>
+            </div>
+          </div>
+        </div>
+
+
 
         <div class="col">
           <div class="card h-100">
